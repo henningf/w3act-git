@@ -1,4 +1,4 @@
-FROM centos
+FROM centos:latest
 
 RUN yum install postgresql -y && \
     yum install java-1.8.0-openjdk -y
