@@ -1,0 +1,1063 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>UkwaForm - uk.bl.api.UkwaForm</title>
+          <meta name="description" content="UkwaForm - uk.bl.api.UkwaForm" />
+          <meta name="keywords" content="UkwaForm uk.bl.api.UkwaForm" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'uk.bl.api.UkwaForm';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <img alt="Class" src="../../../lib/class_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="uk">uk</a>.<a href="../package.html" class="extype" name="uk.bl">bl</a>.<a href="package.html" class="extype" name="uk.bl.api">api</a></p>
+        <h1>UkwaForm</h1><h3><span class="morelinks"><div>Related Doc:
+            <a href="package.html" class="extype" name="uk.bl.api">package api</a>
+          </div></span></h3><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">UkwaForm</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="uk.bl.api.UkwaForm"><span>UkwaForm</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="uk.bl.api.UkwaForm#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(rootName:String,clazz:Class[T],data:java.util.Map[String,String],errors:java.util.Map[String,java.util.List[play.data.validation.ValidationError]],value:play.libs.F.Option[T],groups:Class[_]):uk.bl.api.UkwaForm[T]"></a>
+      <a id="&lt;init&gt;:UkwaForm[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">UkwaForm</span><span class="params">(<span name="rootName">rootName: <span class="extype" name="java.lang.String">String</span></span>, <span name="clazz">clazz: <span class="extype" name="java.lang.Class">Class</span>[<span class="extype" name="uk.bl.api.UkwaForm.T">T</span>]</span>, <span name="data">data: <span class="extype" name="java.util.Map">Map</span>[<span class="extype" name="java.lang.String">String</span>, <span class="extype" name="java.lang.String">String</span>]</span>, <span name="errors">errors: <span class="extype" name="java.util.Map">Map</span>[<span class="extype" name="java.lang.String">String</span>, <span class="extype" name="java.util.List">List</span>[<span class="extype" name="play.data.validation.ValidationError">ValidationError</span>]]</span>, <span name="value">value: <span class="extype" name="play.libs.F.Option">Option</span>[<span class="extype" name="uk.bl.api.UkwaForm.T">T</span>]</span>, <span name="groups">groups: <span class="extype" name="java.lang.Class">Class</span>[_]</span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@&lt;init&gt;(rootName:String,clazz:Class[T],data:java.util.Map[String,String],errors:java.util.Map[String,java.util.List[play.data.validation.ValidationError]],value:play.libs.F.Option[T],groups:Class[_]):uk.bl.api.UkwaForm[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="uk.bl.api.UkwaForm#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(rootName:String,clazz:Class[T],data:java.util.Map[String,String],errors:java.util.Map[String,java.util.List[play.data.validation.ValidationError]],value:play.libs.F.Option[T]):uk.bl.api.UkwaForm[T]"></a>
+      <a id="&lt;init&gt;:UkwaForm[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">UkwaForm</span><span class="params">(<span name="rootName">rootName: <span class="extype" name="java.lang.String">String</span></span>, <span name="clazz">clazz: <span class="extype" name="java.lang.Class">Class</span>[<span class="extype" name="uk.bl.api.UkwaForm.T">T</span>]</span>, <span name="data">data: <span class="extype" name="java.util.Map">Map</span>[<span class="extype" name="java.lang.String">String</span>, <span class="extype" name="java.lang.String">String</span>]</span>, <span name="errors">errors: <span class="extype" name="java.util.Map">Map</span>[<span class="extype" name="java.lang.String">String</span>, <span class="extype" name="java.util.List">List</span>[<span class="extype" name="play.data.validation.ValidationError">ValidationError</span>]]</span>, <span name="value">value: <span class="extype" name="play.libs.F.Option">Option</span>[<span class="extype" name="uk.bl.api.UkwaForm.T">T</span>]</span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@&lt;init&gt;(rootName:String,clazz:Class[T],data:java.util.Map[String,String],errors:java.util.Map[String,java.util.List[play.data.validation.ValidationError]],value:play.libs.F.Option[T]):uk.bl.api.UkwaForm[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="uk.bl.api.UkwaForm#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(name:String,clazz:Class[T],groups:Class[_]):uk.bl.api.UkwaForm[T]"></a>
+      <a id="&lt;init&gt;:UkwaForm[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">UkwaForm</span><span class="params">(<span name="name">name: <span class="extype" name="java.lang.String">String</span></span>, <span name="clazz">clazz: <span class="extype" name="java.lang.Class">Class</span>[<span class="extype" name="uk.bl.api.UkwaForm.T">T</span>]</span>, <span name="groups">groups: <span class="extype" name="java.lang.Class">Class</span>[_]</span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@&lt;init&gt;(name:String,clazz:Class[T],groups:Class[_]):uk.bl.api.UkwaForm[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="uk.bl.api.UkwaForm#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(name:String,clazz:Class[T]):uk.bl.api.UkwaForm[T]"></a>
+      <a id="&lt;init&gt;:UkwaForm[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">UkwaForm</span><span class="params">(<span name="name">name: <span class="extype" name="java.lang.String">String</span></span>, <span name="clazz">clazz: <span class="extype" name="java.lang.Class">Class</span>[<span class="extype" name="uk.bl.api.UkwaForm.T">T</span>]</span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@&lt;init&gt;(name:String,clazz:Class[T]):uk.bl.api.UkwaForm[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="uk.bl.api.UkwaForm#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(clazz:Class[T]):uk.bl.api.UkwaForm[T]"></a>
+      <a id="&lt;init&gt;:UkwaForm[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">UkwaForm</span><span class="params">(<span name="clazz">clazz: <span class="extype" name="java.lang.Class">Class</span>[<span class="extype" name="uk.bl.api.UkwaForm.T">T</span>]</span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@&lt;init&gt;(clazz:Class[T]):uk.bl.api.UkwaForm[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@##():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="uk.bl.api.UkwaForm#apply" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="apply(key:String):uk.bl.api.UkwaForm.Field"></a>
+      <a id="apply(String):Field"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">apply</span><span class="params">(<span name="key">key: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="result">: <span class="extype" name="uk.bl.api.UkwaForm.Field">Field</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@apply(key:String):uk.bl.api.UkwaForm.Field" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="uk.bl.api.UkwaForm#bind" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="bind(data:java.util.Map[String,String],allowedFields:String*):uk.bl.api.UkwaForm[T]"></a>
+      <a id="bind(Map[String,String],&lt;repeated...&gt;[String]):UkwaForm[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">bind</span><span class="params">(<span name="data">data: <span class="extype" name="java.util.Map">Map</span>[<span class="extype" name="java.lang.String">String</span>, <span class="extype" name="java.lang.String">String</span>]</span>, <span name="allowedFields">allowedFields: <span class="extype" name="scala.&lt;repeated...&gt;">&lt;repeated...&gt;</span>[<span class="extype" name="java.lang.String">String</span>]</span>)</span><span class="result">: <a href="" class="extype" name="uk.bl.api.UkwaForm">UkwaForm</a>[<span class="extype" name="uk.bl.api.UkwaForm.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@bind(data:java.util.Map[String,String],allowedFields:String*):uk.bl.api.UkwaForm[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="uk.bl.api.UkwaForm#bind" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="bind(data:com.fasterxml.jackson.databind.JsonNode,allowedFields:String*):uk.bl.api.UkwaForm[T]"></a>
+      <a id="bind(JsonNode,&lt;repeated...&gt;[String]):UkwaForm[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">bind</span><span class="params">(<span name="data">data: <span class="extype" name="com.fasterxml.jackson.databind.JsonNode">JsonNode</span></span>, <span name="allowedFields">allowedFields: <span class="extype" name="scala.&lt;repeated...&gt;">&lt;repeated...&gt;</span>[<span class="extype" name="java.lang.String">String</span>]</span>)</span><span class="result">: <a href="" class="extype" name="uk.bl.api.UkwaForm">UkwaForm</a>[<span class="extype" name="uk.bl.api.UkwaForm.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@bind(data:com.fasterxml.jackson.databind.JsonNode,allowedFields:String*):uk.bl.api.UkwaForm[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="uk.bl.api.UkwaForm#bindFromRequest" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="bindFromRequest(requestData:java.util.Map[String,Array[String]],allowedFields:String*):uk.bl.api.UkwaForm[T]"></a>
+      <a id="bindFromRequest(Map[String,Array[String]],&lt;repeated...&gt;[String]):UkwaForm[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">bindFromRequest</span><span class="params">(<span name="requestData">requestData: <span class="extype" name="java.util.Map">Map</span>[<span class="extype" name="java.lang.String">String</span>, <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="java.lang.String">String</span>]]</span>, <span name="allowedFields">allowedFields: <span class="extype" name="scala.&lt;repeated...&gt;">&lt;repeated...&gt;</span>[<span class="extype" name="java.lang.String">String</span>]</span>)</span><span class="result">: <a href="" class="extype" name="uk.bl.api.UkwaForm">UkwaForm</a>[<span class="extype" name="uk.bl.api.UkwaForm.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@bindFromRequest(requestData:java.util.Map[String,Array[String]],allowedFields:String*):uk.bl.api.UkwaForm[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="uk.bl.api.UkwaForm#bindFromRequest" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="bindFromRequest(request:play.mvc.Http.Request,allowedFields:String*):uk.bl.api.UkwaForm[T]"></a>
+      <a id="bindFromRequest(Request,&lt;repeated...&gt;[String]):UkwaForm[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">bindFromRequest</span><span class="params">(<span name="request">request: <span class="extype" name="play.mvc.Http.Request">Request</span></span>, <span name="allowedFields">allowedFields: <span class="extype" name="scala.&lt;repeated...&gt;">&lt;repeated...&gt;</span>[<span class="extype" name="java.lang.String">String</span>]</span>)</span><span class="result">: <a href="" class="extype" name="uk.bl.api.UkwaForm">UkwaForm</a>[<span class="extype" name="uk.bl.api.UkwaForm.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@bindFromRequest(request:play.mvc.Http.Request,allowedFields:String*):uk.bl.api.UkwaForm[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="uk.bl.api.UkwaForm#bindFromRequest" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="bindFromRequest(allowedFields:String*):uk.bl.api.UkwaForm[T]"></a>
+      <a id="bindFromRequest(&lt;repeated...&gt;[String]):UkwaForm[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">bindFromRequest</span><span class="params">(<span name="allowedFields">allowedFields: <span class="extype" name="scala.&lt;repeated...&gt;">&lt;repeated...&gt;</span>[<span class="extype" name="java.lang.String">String</span>]</span>)</span><span class="result">: <a href="" class="extype" name="uk.bl.api.UkwaForm">UkwaForm</a>[<span class="extype" name="uk.bl.api.UkwaForm.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@bindFromRequest(allowedFields:String*):uk.bl.api.UkwaForm[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@clone():Object" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="uk.bl.api.UkwaForm#data" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="data():java.util.Map[String,String]"></a>
+      <a id="data():Map[String,String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">data</span><span class="params">()</span><span class="result">: <span class="extype" name="java.util.Map">Map</span>[<span class="extype" name="java.lang.String">String</span>, <span class="extype" name="java.lang.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@data():java.util.Map[String,String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="uk.bl.api.UkwaForm#discardErrors" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="discardErrors():Unit"></a>
+      <a id="discardErrors():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">discardErrors</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@discardErrors():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="uk.bl.api.UkwaForm#error" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="error(key:String):play.data.validation.ValidationError"></a>
+      <a id="error(String):ValidationError"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">error</span><span class="params">(<span name="key">key: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="result">: <span class="extype" name="play.data.validation.ValidationError">ValidationError</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@error(key:String):play.data.validation.ValidationError" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="uk.bl.api.UkwaForm#errors" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="errors():java.util.Map[String,java.util.List[play.data.validation.ValidationError]]"></a>
+      <a id="errors():Map[String,List[ValidationError]]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">errors</span><span class="params">()</span><span class="result">: <span class="extype" name="java.util.Map">Map</span>[<span class="extype" name="java.lang.String">String</span>, <span class="extype" name="java.util.List">List</span>[<span class="extype" name="play.data.validation.ValidationError">ValidationError</span>]]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@errors():java.util.Map[String,java.util.List[play.data.validation.ValidationError]]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="uk.bl.api.UkwaForm#errorsAsJson" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="errorsAsJson(lang:play.i18n.Lang):com.fasterxml.jackson.databind.JsonNode"></a>
+      <a id="errorsAsJson(Lang):JsonNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">errorsAsJson</span><span class="params">(<span name="lang">lang: <span class="extype" name="play.i18n.Lang">Lang</span></span>)</span><span class="result">: <span class="extype" name="com.fasterxml.jackson.databind.JsonNode">JsonNode</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@errorsAsJson(lang:play.i18n.Lang):com.fasterxml.jackson.databind.JsonNode" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="uk.bl.api.UkwaForm#errorsAsJson" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="errorsAsJson():com.fasterxml.jackson.databind.JsonNode"></a>
+      <a id="errorsAsJson():JsonNode"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">errorsAsJson</span><span class="params">()</span><span class="result">: <span class="extype" name="com.fasterxml.jackson.databind.JsonNode">JsonNode</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@errorsAsJson():com.fasterxml.jackson.databind.JsonNode" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="uk.bl.api.UkwaForm#field" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="field(key:String):uk.bl.api.UkwaForm.Field"></a>
+      <a id="field(String):Field"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">field</span><span class="params">(<span name="key">key: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="result">: <span class="extype" name="uk.bl.api.UkwaForm.Field">Field</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@field(key:String):uk.bl.api.UkwaForm.Field" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="uk.bl.api.UkwaForm#fill" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="fill(value:T):uk.bl.api.UkwaForm[T]"></a>
+      <a id="fill(T):UkwaForm[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">fill</span><span class="params">(<span name="value">value: <span class="extype" name="uk.bl.api.UkwaForm.T">T</span></span>)</span><span class="result">: <a href="" class="extype" name="uk.bl.api.UkwaForm">UkwaForm</a>[<span class="extype" name="uk.bl.api.UkwaForm.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@fill(value:T):uk.bl.api.UkwaForm[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="uk.bl.api.UkwaForm#get" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="get():T"></a>
+      <a id="get():T"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">get</span><span class="params">()</span><span class="result">: <span class="extype" name="uk.bl.api.UkwaForm.T">T</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@get():T" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="uk.bl.api.UkwaForm#getArgumentsForConstraint" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getArgumentsForConstraint(objectName:String,field:String,descriptor:javax.validation.metadata.ConstraintDescriptor[_]):Array[Object]"></a>
+      <a id="getArgumentsForConstraint(String,String,ConstraintDescriptor[_]):Array[AnyRef]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getArgumentsForConstraint</span><span class="params">(<span name="objectName">objectName: <span class="extype" name="java.lang.String">String</span></span>, <span name="field">field: <span class="extype" name="java.lang.String">String</span></span>, <span name="descriptor">descriptor: <span class="extype" name="javax.validation.metadata.ConstraintDescriptor">ConstraintDescriptor</span>[_]</span>)</span><span class="result">: <span class="extype" name="scala.Array">Array</span>[<span class="extype" name="scala.AnyRef">AnyRef</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@getArgumentsForConstraint(objectName:String,field:String,descriptor:javax.validation.metadata.ConstraintDescriptor[_]):Array[Object]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="package.html" class="extype" name="uk.bl.api">uk.bl.api</a>] </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="uk.bl.api.UkwaForm#getMessageForConstraintViolation" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getMessageForConstraintViolation(violation:javax.validation.ConstraintViolation[Object]):String"></a>
+      <a id="getMessageForConstraintViolation(ConstraintViolation[AnyRef]):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getMessageForConstraintViolation</span><span class="params">(<span name="violation">violation: <span class="extype" name="javax.validation.ConstraintViolation">ConstraintViolation</span>[<span class="extype" name="scala.AnyRef">AnyRef</span>]</span>)</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@getMessageForConstraintViolation(violation:javax.validation.ConstraintViolation[Object]):String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="package.html" class="extype" name="uk.bl.api">uk.bl.api</a>] </dd></dl></div>
+    </li><li name="uk.bl.api.UkwaForm#globalError" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="globalError():play.data.validation.ValidationError"></a>
+      <a id="globalError():ValidationError"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">globalError</span><span class="params">()</span><span class="result">: <span class="extype" name="play.data.validation.ValidationError">ValidationError</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@globalError():play.data.validation.ValidationError" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="uk.bl.api.UkwaForm#globalErrors" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="globalErrors():java.util.List[play.data.validation.ValidationError]"></a>
+      <a id="globalErrors():List[ValidationError]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">globalErrors</span><span class="params">()</span><span class="result">: <span class="extype" name="java.util.List">List</span>[<span class="extype" name="play.data.validation.ValidationError">ValidationError</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@globalErrors():java.util.List[play.data.validation.ValidationError]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="uk.bl.api.UkwaForm#hasErrors" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="hasErrors():Boolean"></a>
+      <a id="hasErrors():Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hasErrors</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@hasErrors():Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="uk.bl.api.UkwaForm#hasGlobalErrors" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="hasGlobalErrors():Boolean"></a>
+      <a id="hasGlobalErrors():Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hasGlobalErrors</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@hasGlobalErrors():Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="uk.bl.api.UkwaForm#name" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="name():String"></a>
+      <a id="name():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">name</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@name():String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="uk.bl.api.UkwaForm#reject" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="reject(error:String):Unit"></a>
+      <a id="reject(String):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">reject</span><span class="params">(<span name="error">error: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@reject(error:String):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="uk.bl.api.UkwaForm#reject" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="reject(error:String,args:java.util.List[Object]):Unit"></a>
+      <a id="reject(String,List[AnyRef]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">reject</span><span class="params">(<span name="error">error: <span class="extype" name="java.lang.String">String</span></span>, <span name="args">args: <span class="extype" name="java.util.List">List</span>[<span class="extype" name="scala.AnyRef">AnyRef</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@reject(error:String,args:java.util.List[Object]):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="uk.bl.api.UkwaForm#reject" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="reject(key:String,error:String):Unit"></a>
+      <a id="reject(String,String):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">reject</span><span class="params">(<span name="key">key: <span class="extype" name="java.lang.String">String</span></span>, <span name="error">error: <span class="extype" name="java.lang.String">String</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@reject(key:String,error:String):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="uk.bl.api.UkwaForm#reject" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="reject(key:String,error:String,args:java.util.List[Object]):Unit"></a>
+      <a id="reject(String,String,List[AnyRef]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">reject</span><span class="params">(<span name="key">key: <span class="extype" name="java.lang.String">String</span></span>, <span name="error">error: <span class="extype" name="java.lang.String">String</span></span>, <span name="args">args: <span class="extype" name="java.util.List">List</span>[<span class="extype" name="scala.AnyRef">AnyRef</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@reject(key:String,error:String,args:java.util.List[Object]):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="uk.bl.api.UkwaForm#reject" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="reject(error:play.data.validation.ValidationError):Unit"></a>
+      <a id="reject(ValidationError):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">reject</span><span class="params">(<span name="error">error: <span class="extype" name="play.data.validation.ValidationError">ValidationError</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@reject(error:play.data.validation.ValidationError):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="uk.bl.api.UkwaForm#requestData" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="requestData(request:play.mvc.Http.Request):java.util.Map[String,String]"></a>
+      <a id="requestData(Request):Map[String,String]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">requestData</span><span class="params">(<span name="request">request: <span class="extype" name="play.mvc.Http.Request">Request</span></span>)</span><span class="result">: <span class="extype" name="java.util.Map">Map</span>[<span class="extype" name="java.lang.String">String</span>, <span class="extype" name="java.lang.String">String</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@requestData(request:play.mvc.Http.Request):java.util.Map[String,String]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="package.html" class="extype" name="uk.bl.api">uk.bl.api</a>] </dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="uk.bl.api.UkwaForm#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@toString():String" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="uk.bl.api.UkwaForm">UkwaForm</a> → AnyRef → Any</dd></dl></div>
+    </li><li name="uk.bl.api.UkwaForm#value" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="value():play.libs.F.Option[T]"></a>
+      <a id="value():Option[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">value</span><span class="params">()</span><span class="result">: <span class="extype" name="play.libs.F.Option">Option</span>[<span class="extype" name="uk.bl.api.UkwaForm.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@value():play.libs.F.Option[T]" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#uk.bl.api.UkwaForm@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

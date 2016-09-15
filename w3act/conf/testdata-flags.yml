@@ -1,0 +1,43 @@
+# Flags
+
+flags:
+
+    - !!models.Flag
+        name:         Priority Permission
+        description:  This flag marks priority permission
+
+    - !!models.Flag
+        name:         Priority Crawl & QA
+        description:  This flag marks priority crawl and QA
+
+    - !!models.Flag
+        name:         Priority QA
+        description:  This flag marks priority QA
+
+    - !!models.Flag
+        name:         QA Issue - Appearance
+        description:  This flag marks QA issue appearance
+
+    - !!models.Flag
+        name:         QA Issue - Functionality
+        description:  This flag marks QA issue functionality
+
+    - !!models.Flag
+        name:         QA Issue - Content
+        description:  This flag marks QA issue content
+
+    - !!models.Flag
+        name:         Follow Up Permission
+        description:  This flag marks follow up permission
+
+    - !!models.Flag
+        name:         General Change Request
+        description:  This flag marks general change request
+
+    - !!models.Flag
+        name:         Missing PDF
+        description:  A PDF file is missing after a crawl
+
+    - !!models.Flag
+        name:         No Documents Found
+        description:  There were no documents found during a crawl

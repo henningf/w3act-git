@@ -1,0 +1,12 @@
+# Contact Persons
+
+contactpersons:
+
+    - !!models.ContactPerson
+        name:                  Nicola Bingham
+        position:              archivist
+        phone:                 +44 (0)1937 54 6972
+        email:                 nicola.bingham@bl.uk
+        postalAddress:         The British Library, London, UK
+        webForm:               www.webarchive.org.uk/ukwa/info/contact
+        contactOrganisation:   Main Archive

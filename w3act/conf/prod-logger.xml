@@ -1,0 +1,18 @@
+<configuration>
+	<conversionRule conversionWord="coloredLevel" converterClass="play.api.Logger$ColoredLevel" />
+	<appender name="FILE" class="ch.qos.logback.core.FileAppender">
+		<file>/var/log/w3act.log</file>
+		<encoder>
+            <pattern>%date %coloredLevel %logger{15} - %message%n%xException{5}</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="play" level="WARN" />
+	<logger name="controllers" level="INFO" />
+    <logger name="uk.bl" level="INFO" />
+    <logger name="com.thesecretserver" level="INFO" />
+
+	<root level="ERROR">
+		<appender-ref ref="FILE" />
+	</root>
+</configuration>
