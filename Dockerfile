@@ -1,4 +1,4 @@
-FROM centos@sha256:2ae0d2c881c7123870114fb9cc7afabd1e31f9888dac8286884f6cf59373ed9b
+FROM centos:7
 
 RUN yum install postgresql -y && \
     yum install java-1.8.0-openjdk -y
