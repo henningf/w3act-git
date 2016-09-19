@@ -13,7 +13,7 @@ docker build -t w3act .
 docker run -d --name postgres -e POSTGRES_PASSWORD=training -e POSTGRES_USER=training -e POSTGRES_DB=w3act postgres:9.3.12 
 
 # Start w3act
-docker run -d --name w3act --link postgres:postgres -e POSTGRES_HOST=postgres -e POSTGRES_USER=training -e PGPASSWORD=training -e POSTGRES_DB=w3act -p 9000:9000 w3act
+docker run -d --name w3act --link postgres:postgres -e POSTGRES_HOST=postgres -e POSTGRES_USER=training -e POSTGRES_PASSWORD=training -e POSTGRES_DB=w3act -p 9000:9000 w3act
 
 # To get testdata into the database run:
 docker exec -it w3act bash
