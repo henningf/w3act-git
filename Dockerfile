@@ -12,6 +12,9 @@ ENV POSTGRES_DB w3act
 
 EXPOSE 9000
 
+RUN chown -R 0 /opt/w3act && \
+    chmod -R 775 /opt/w3act
+
 WORKDIR /opt/w3act
 
 # Script that waits for the database to be accessible before starting w3act
