@@ -2,6 +2,10 @@
 
 set -e
 
+# Setting password for postgesdb
+export PGPASSWORD="$POSTGRES_PASSWORD"
+
+
 # Startup script, designed to wait for postgres to come up before w3act.
 # W3ACT fails of postgres is not available
 
