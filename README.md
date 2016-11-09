@@ -1,9 +1,32 @@
-Dockerfile for running w3act in docker
+Dockerfile for running w3act
 ==============================================
 
 I got w3act from [UKWA w3act](https://github.com/ukwa/w3act)
 
 w3act is setup to run with a postgres database, to test this dockerfile just run:
+
+Added auto-creation of prod.conf, environment variables that can be set are:
+POSTGRES_USER
+POSTGRES_PASSWORD
+POSTGRES_HOST
+POSTGRES_DB
+W3ACT_SECRET
+PRIVACY_STATEMENT 
+W3ACT_SERVER_NAME
+AMQP_QUEUE_HOST
+AMQP_QUEUE_PORT
+AMQP_QUEUE_NAME
+AMQP_ROUTING_KEY
+AMQP_EXCHANGE_NAME 
+APPLICATION_WAYBACK_URL
+APPLICATION_WAYBACK_QUERY_PATH 
+APPLICATION_ACCESS_RESOLVER_URL
+APPLICATION_MONITRIX_URL 
+APPLICATION_PDFTOHTMLEX_URL
+ADMIN_DEFAULT_EMAIL
+W3ACT_USE_ACCOUNTS
+
+
 
 ```
 # Create w3act docker-container
