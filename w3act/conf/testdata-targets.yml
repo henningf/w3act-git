@@ -3,9 +3,11 @@
 users:
 
   - &bob !!models.User
-    email:      bob@example.com
-    name:       Bob
-    password:   secret
+    email:       bob@example.com
+    name:        Bob
+    password:    secret
+    affiliation: BL
+    roleHolder:  expert_user
 
 # Open source license
 
@@ -23,7 +25,7 @@ fieldUrls:
     url:   http://acid.matkelly.com/
 
   - &fieldUrl2 !!models.FieldUrl
-    url:   http://crawl-test-site/crawl-test-site/
+    url:   http://crawl-test-site:4000/crawl-test-site/
  
   - &fieldUrl3 !!models.FieldUrl
     url:   http://example.org
@@ -42,6 +44,14 @@ collections:
     name:           UKWA Test Sites
     createdAt:      2012-02-01
     parent:         *collection1
+
+# Watched Target
+
+watchedTargets:
+
+  - &watchedTarget1 !!models.WatchedTarget
+    id:             1
+    target:         &target2
 
 
 # Targets
@@ -79,6 +89,7 @@ targets:
     collections:    [*collection1,*collection2]
     professionalJudgement: True
     professionalJudgementExp: UKWA content.
+    watchedTarget:  *watchedTarget1
 
   - &target3 !!models.Target
     id:             3
