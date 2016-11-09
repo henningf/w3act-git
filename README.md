@@ -5,7 +5,7 @@ I got w3act from [UKWA w3act](https://github.com/ukwa/w3act)
 
 w3act is setup to run with a postgres database, to test this dockerfile just run:
 
-Added auto-creation of prod.conf, environment variables that can be set are:
+Added auto-creation of prod.conf, environment variables that can be set are:  
 POSTGRES_USER  
 POSTGRES_PASSWORD  
 POSTGRES_HOST  
