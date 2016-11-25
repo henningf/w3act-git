@@ -2,11 +2,11 @@ FROM centos:7
 
 RUN yum install postgresql -y && \
     yum install java-1.8.0-openjdk -y && \
-    yum install epel-release -y && \
-    yum install python-pip -y
+    yum install epel-release -y 
 
 COPY w3act /opt/w3act 
 COPY w3act_bin /opt/w3act/bin
+COPY GeoLite2city/GeoLite2-City.mmdb /opt/w3act/lib/GeoLite2-City.mmdb
 
 ENV POSTGRES_USER training
 ENV POSTGRES_PASSWORD training
@@ -27,6 +27,8 @@ ENV APPLICATION_MONITRIX_URL http://elk.ddb.wa.bl.uk:5601/app/kibana
 ENV APPLICATION_PDFTOHTMLEX_URL http://192.168.99.100:5000/convert?url=
 ENV ADMIN_DEFAULT_EMAIL wa-sysadm@bl.uk
 ENV W3ACT_USE_ACCOUNTS true
+ENV APPLICATION_LOGLEVEL WARN
+ENV DATABASE_LOGSTATEMENTS false
 
 
 EXPOSE 9000
@@ -36,8 +38,4 @@ RUN chown -R 0 /opt/w3act && \
 
 WORKDIR /opt/w3act
 
-# Install jinja2 for python
-RUN pip install Jinja2
-
-# Script that waits for the database to be accessible before starting w3act
-CMD ["/opt/w3act/bin/wait_for_it.sh"]
+CMD ./bin/w3act -Dapplication.data.import=true -Ddb.default.url="postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@${POSTGRES_HOST}/${POSTGRES_DB}" -Dapplication.name=w3act -Dapplication.secret="${W3ACT_SECRET}" -Dconfig.file=/opt/w3act/conf/prod.conf
