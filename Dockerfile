@@ -5,7 +5,6 @@ RUN yum install postgresql -y && \
     yum install epel-release -y 
 
 COPY w3act /opt/w3act 
-COPY w3act_bin /opt/w3act/bin
 COPY GeoLite2city/GeoLite2-City.mmdb /opt/w3act/lib/GeoLite2-City.mmdb
 
 ENV POSTGRES_USER training
